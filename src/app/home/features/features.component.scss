@@ -1,0 +1,12 @@
+.features {
+    gap: 20px;
+    p {
+        color: #A5A3A8;
+    }
+}
+
+.features-container {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 25px;
+}
