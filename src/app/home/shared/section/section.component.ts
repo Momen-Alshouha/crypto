@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-
+import { Component, Input } from '@angular/core';
+import { HomeSection } from '../../../home-section';
+import { environment } from '../../../../environments/environment.development';
 @Component({
   selector: 'app-section',
   standalone: true,
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './section.component.scss'
 })
 export class SectionComponent {
-
+  protected env = environment;
+ @Input() additionalClasses?:string;
+ @Input() sectionData!:HomeSection;
 }

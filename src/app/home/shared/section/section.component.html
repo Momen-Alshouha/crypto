@@ -1,1 +1,10 @@
-<p>section works!</p>
+<div class="container d-flex align-items-center justify-content-center g-5 {{additionalClasses}} mt-5">
+  <div class="div1">
+    <img [src]="env.imagesPath+sectionData.imgName" alt="" />
+  </div>
+  <div class="div2">
+    <ng-content select="[title]"></ng-content>
+    <p class="text">{{ sectionData.text }}</p>
+    <button class="gradient-bordered-btn" href="">{{ sectionData.btnText }}</button>
+  </div>
+</div>
