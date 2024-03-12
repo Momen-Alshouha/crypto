@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Feature } from '../../../feature';
+import { Feature } from '../../interfaces/feature';
 import { FeatureBoxComponent } from "../shared/feature-box/feature-box.component";
 import { CommonModule } from '@angular/common';
 

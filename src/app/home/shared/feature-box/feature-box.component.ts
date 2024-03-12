@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Feature } from '../../../../feature';
+import { Feature } from '../../../interfaces/feature';
 import { environment } from '../../../../environments/environment.development';
 @Component({
   selector: 'app-feature-box',

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { SectionComponent } from '../shared/section/section.component';
-import { HomeSection } from '../../home-section';
+import { HomeSection } from '../../interfaces/home-section';
 @Component({
   selector: 'app-home-sections',
   standalone: true,
