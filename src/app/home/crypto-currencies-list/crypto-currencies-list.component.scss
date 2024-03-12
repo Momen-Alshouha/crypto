@@ -1,0 +1,81 @@
+.currency-details-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+
+.currency-card {
+  img {
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  display: flex;
+  align-items: center;
+  padding: 10px 6px;
+  margin-bottom: 10px;
+  gap: 7px;
+  justify-content: space-between;
+}
+
+.currency-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.currency-details {
+  flex: 1;
+}
+
+.currency-details h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.currency-details p {
+  margin: 0;
+}
+.currency-card {
+  border-top: 1px solid #a3a3ad;
+  background: hsla(237, 16%, 27%, 0.7);
+  background: linear-gradient(
+    275deg,
+    hsla(237, 16%, 27%, 0.7) 53%,
+    hsla(238, 28%, 17%, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    275deg,
+    hsla(237, 16%, 27%, 0.7) 53%,
+    hsla(238, 28%, 17%, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    275deg,
+    hsla(237, 16%, 27%, 0.7) 53%,
+    hsla(238, 28%, 17%, 1) 100%
+  );
+  position: relative;
+}
+
+.fade-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(to top, transparent, #a3a3ad);
+  z-index: 1;
+}
+
+h5,
+p {
+  margin: 0;
+}
+
+.positive-change {
+    color: #089641;
+}
+
+.negative-change {
+    color: #ff6347;
+}

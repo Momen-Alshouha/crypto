@@ -67,3 +67,14 @@ body::after {
 body {
   overflow-x: hidden;
 }
+
+.fade-border::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(to top, transparent, #a3a3ad);
+  z-index: 1;
+}

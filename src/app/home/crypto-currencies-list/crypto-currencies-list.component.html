@@ -1,0 +1,21 @@
+<div class="container currency-details-container">
+  <div *ngFor="let currency of currenciesData$ | async" class="currency-item">
+    <div class="d-flex currency-card fade-border">
+        <img
+          [src]="currency.image"
+          alt="{{ currency.name }} Logo"
+          class="currency-logo"
+        />
+      <div>
+        <h5>{{ currency.name }}</h5>
+        <p [ngClass]="{'positive-change': currency.price_change_percentage_24h >= 0, 'negative-change': currency.price_change_percentage_24h < 0}">
+            {{ currency.price_change_percentage_24h | number }}%
+        </p>        
+      </div>
+        <p class="ml-auto">
+          {{ currency.current_price | currency : "USD" : "symbol" : "1.2-2" }}
+        </p>
+ 
+    </div>
+  </div>
+</div>

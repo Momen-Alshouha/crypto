@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { SectionComponent } from '../shared/section/section.component';
 import { HomeSection } from '../../interfaces/home-section';
+import { CryptoCurrenciesListComponent } from '../crypto-currencies-list/crypto-currencies-list.component';
 @Component({
   selector: 'app-home-sections',
   standalone: true,
-  imports: [SectionComponent],
+  imports: [SectionComponent, CryptoCurrenciesListComponent],
   templateUrl: './home-sections.component.html',
   styleUrl: './home-sections.component.scss',
 })

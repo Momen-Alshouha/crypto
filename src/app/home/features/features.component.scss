@@ -1,9 +1,27 @@
 .features {
+    position: relative;
     gap: 20px;
     p {
         color: #A5A3A8;
     }
 }
+
+
+.features::before {
+    background: url(../../../assets/images/looper.svg) no-repeat center;
+    background-size: contain;
+    content: "";
+    display: block;
+    position: absolute;
+    right: -176px;
+    top: 20px;
+    width: 441px;
+    height: 606px;
+    background-size: contain;
+    z-index: -99;
+    transform: rotate(-363deg);
+  }
+  
 
 .features-container {
     display: grid; 
