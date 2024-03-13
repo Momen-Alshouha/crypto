@@ -10,6 +10,7 @@ body {
   padding: 0;
   color: white;
   position: relative;
+  overflow-x: clip;
 }
 
 body::after {
@@ -24,6 +25,9 @@ body::after {
   background-repeat: no-repeat;
   background-size: contain;
   z-index: -1;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .shared-btn {
@@ -33,6 +37,10 @@ body::after {
   outline: 0;
   color: white;
   font-size: 18px;
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding: 7px 23px;
+  }
 }
 
 .gradient-bordered-btn {
@@ -46,6 +54,10 @@ body::after {
     hsl(6, 55%, 51%) 90%);
   border-image-slice: 1;
   outline: none;
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding: 7px 23px;
+  }
 }
 
 .gradient-bordered-btn:hover {
@@ -63,6 +75,9 @@ body::after {
 .text {
   color: #A5A3A8;
   font-size: 21px;
+  @media (max-width: 768px) {
+    font-size: 17px;
+  }
 }
 
 body {

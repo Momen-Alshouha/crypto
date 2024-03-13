@@ -16,6 +16,9 @@
     background-size: contain;
     z-index: -1;
     transform: rotate(-193deg);
+    @media (max-width: 768px) {
+        display: none;
+      }
 }
 
 .section2::before {
@@ -31,4 +34,20 @@
     background-size: contain;
     z-index: -1;
     transform: rotate(360deg);
+    @media (max-width: 768px) {
+        display: none;
+      }
+}
+
+.div1 {
+    @media (max-width: 768px) {
+        display: none;
+      }
+}
+
+
+.div2 {
+    @media (max-width: 768px) {
+        text-align: center;
+      }
 }

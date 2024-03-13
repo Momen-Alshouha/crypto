@@ -2,12 +2,24 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 35px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  @media (max-width: 400px) {
+    gap: 3px;
+  }
 }
 
 .currency-card {
   img {
     object-fit: cover;
     border-radius: 50%;
+    @media (max-width: 768px) {
+     margin: 0;
+    }
   }
   display: flex;
   align-items: center;
@@ -15,12 +27,20 @@
   margin-bottom: 10px;
   gap: 7px;
   justify-content: space-evenly;
+  @media (max-width: 768px) {
+    gap: 3px;
+    padding: 10px 2px;
+  }
 }
 
 .currency-logo {
   width: 50px;
   height: 50px;
   margin-right: 10px;
+  @media (max-width: 768px) {
+    width: 35px;
+    height: 35px;
+  }
 }
 
 .currency-details {
@@ -73,9 +93,27 @@ p {
 }
 
 .positive-change {
-    color: #089641;
+  color: #089641;
 }
 
 .negative-change {
-    color: #ff6347;
+  color: #ff6347;
+}
+
+@media (max-width: 400px) {
+  h5 {
+    font-size: 13px;
+  }
+
+  .positive-change {
+    font-size: 12px;
+  }
+  
+  .negative-change {
+    font-size: 12px;
+  }
+
+  .curr-price {
+    font-size: 13px;
+  }
 }

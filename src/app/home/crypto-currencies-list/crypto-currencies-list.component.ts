@@ -16,7 +16,7 @@ export class CryptoCurrenciesListComponent implements OnInit {
   constructor(private _currencyService: CurrencyService) {}
   
   ngOnInit(): void {
-    this.currenciesData$ = this.getCurrenciesData$();
+    // this.currenciesData$ = this.getCurrenciesData$();
   }
 
   getCurrenciesData$(): Observable<any> {

@@ -1,3 +1,10 @@
 h1 {
     width: 75%;
 }
+
+@media (max-width: 768px) {
+    h1 {
+        width: 100%;
+        font-size: 23px;
+    }
+  }

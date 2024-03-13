@@ -1,18 +1,37 @@
 .hero-btn {
-    margin-right: 20px;
+  margin-right: 20px;
+}
+.left {
+    
+@media (max-width: 768px) {
+    text-align: center;
+    h1 {
+        font-size: 24px;
+    }
+  }
 }
 
 .hero::before {
-    background: url(../../../assets/images/looper.svg) no-repeat center;
-    background-size: contain;
-    content: "";
-    display: block;
-    position: absolute;
-    left: -116px;
-    top: 0;
-    width: 550px;
-    height: 606px;
-    background-size: contain;
-    z-index: -1;
-    transform: rotate(180deg);
+  background: url(../../../assets/images/looper.svg) no-repeat center;
+  background-size: contain;
+  content: "";
+  display: block;
+  position: absolute;
+  left: -116px;
+  top: 0;
+  width: 550px;
+  height: 606px;
+  background-size: contain;
+  z-index: -1;
+  transform: rotate(180deg);
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.right {
+  @media (max-width: 768px) {
+    display: none;
+  }
 }

@@ -18,6 +18,12 @@
   );
   min-height: 330px;
   position: relative;
+
+  @media (max-width: 768px) {
+    margin-top: 40px;
+    min-height: 280px;
+  }
+
   h4 {
     color: white;
   }
