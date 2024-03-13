@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { environment } from '../../../environments/environment.development';
 @Component({
   selector: 'app-footer',
   standalone: true,
@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-
+protected environment = environment;
+ email : string = 'unreal@outlook.com';
 }

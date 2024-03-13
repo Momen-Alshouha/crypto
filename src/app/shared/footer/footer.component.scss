@@ -1,0 +1,54 @@
+.footer {
+  background: url(../../../assets/images/footer-background.png) no-repeat center;
+  background-size: 100% 100%;
+  img {
+    object-fit: none;
+  }
+  button {
+    background-color: #351a88;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    border-radius: 38px;
+    font-size: 12px;
+    padding: 13px 30px;
+    transform: translate(0px, -50%);
+    color: white;
+    border: 0;
+  }
+  form {
+    position: relative;
+    width: 100%;
+  }
+  input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 38px;
+    outline: 0;
+    border: 0;
+  }
+  .Subscribe {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .text {
+    font-size: 17px;
+  }
+  p {
+    margin: 0;
+  }
+  .contact-title {
+    color: #8c8c8c;
+    font-size: 13px;
+  }
+  .nav-footer-items {
+    padding-left: 0;
+    margin: 0;
+    li {
+      padding-left: 0;
+      list-style: none;
+      text-decoration: none;
+      color: #8c8c8c;
+    }
+  }
+}

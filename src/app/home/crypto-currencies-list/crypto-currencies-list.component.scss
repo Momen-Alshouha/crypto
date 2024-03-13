@@ -1,7 +1,7 @@
 .currency-details-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 15px;
+  gap: 35px;
 }
 
 .currency-card {
@@ -14,7 +14,7 @@
   padding: 10px 6px;
   margin-bottom: 10px;
   gap: 7px;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .currency-logo {
